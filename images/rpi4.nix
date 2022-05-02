@@ -1,6 +1,6 @@
-{ ... }: {
+{ lib, ... }: {
   imports = [
-    ../modules/openssh.nix
+    ../modules/common.nix
   ];
 
   nixpkgs.localSystem = {

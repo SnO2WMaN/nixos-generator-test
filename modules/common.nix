@@ -1,5 +1,5 @@
 { pkgs, lib, cfg, ... }: {
-  console.keyMap = "ja";
+  console.keyMap = "jp106";
 
   time.timeZone = "Asia/Tokyo";
 
@@ -22,18 +22,12 @@
     enable = true;
     autosuggestions = { enable = true; };
     syntaxHighlighting = { enable = true; };
-    history = {
-      extended = true;
-      share = false;
-      save = 100000;
-      size = 100000;
-    };
+    histSize = 100000;
   };
   programs.starship = {
     enable = true;
   };
   programs.vim = {
-    enable = true;
     defaultEditor = true;
   };
 
